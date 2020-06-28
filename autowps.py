@@ -111,7 +111,7 @@ class AutoClockIn(object):
                 continue
 
 def wps_main(*args,**kwargs):
-    ac = AutoClockIn("215609570","V02SK4wRb50dhJ40r748LAg8lXVohfQ00abe3c2c000cd9f0e2")
+    ac = AutoClockIn("xxx","V02SK4wRb50dhJ40r748LAg8lXVohfQ00abe3c2c000cd9f0e2")
     ac.auto_clockin()
     ac.invited()
 
