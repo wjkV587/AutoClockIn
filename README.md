@@ -3,7 +3,7 @@ The project contains auto clock in script for example wps.
 
 <h2>How To Use</h2>
 1.登陆网页版WPS：https://zt.wps.cn/2018/clock_in，
-微信登陆后F12查看cookies信息，找到application里的wps_id如图
+微信登陆后F12查看cookies信息，找到application->cookies里的wps_id如图
 
 ![](https://github.com/wjkV587/AutoClockIn/raw/master/images/wps.png)
 
