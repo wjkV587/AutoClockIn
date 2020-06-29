@@ -24,4 +24,7 @@ The project contains auto clock in script for example wps.
 
 ![](https://github.com/wjkV587/AutoClockIn/raw/master/images/tx3.png)
 
+4.最后就是触发器，可以利用cron表达式来完成，设置0 0 7 * * * *表示每天7点运行该脚本，当然你可以自己设置周期。
+
+![](https://github.com/wjkV587/AutoClockIn/raw/master/images/tx4.png)
 
