@@ -44,7 +44,12 @@ class AutoClockIn(object):
     def __init__(self,wpdId=None,clockinId=None):
         self.wpdId = wpdId
         self.clockinId = clockinId
-        self.headers = {"sid": self.clockinId}
+        self.headers = {
+            'Host': 'zt.wps.cn',
+            'content-type': 'application/json',
+            'sid': self.clockinId,
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
+        }
 
     def auto_clockin(self) -> None:
         '''
@@ -79,6 +84,7 @@ class AutoClockIn(object):
                             res_clockin = requests.get(url='http://zt.wps.cn/2018/clock_in/api/clock_in?member=wps',
                                                         headers=self.headers)
                             res_clockin = json.loads(res_clockin.text)
+
                             if(res_clockin['result'] == 'ok'):
                                 logging.info("{0},{1}".format(res_clockin,'打卡成功!'))
                             else:
